@@ -1,0 +1,49 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+.container{ 
+    display: flex;
+    justify-content: center;
+   margin-top: 8%;
+}
+.box{
+    height: 50vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border: 2px solid black;
+
+}
+.ball{
+    height: 10vh;
+    width: 10vh;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 50%;
+   
+    animation: bounce infinite 2s;
+}
+
+
+@keyframes bounce {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-70px);
+    }
+}
