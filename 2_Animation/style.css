@@ -1,0 +1,35 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: lightseagreen;
+    position: absolute;
+    animation: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes move {
+    /* initial state */
+    from{
+        left: 0;
+        background-color: lightseagreen;
+        top: 0;
+    }
+    /* final state */
+    to{
+        left: 70%;
+        background-color:salmon ;
+        top: 55%;
+    }
+}
